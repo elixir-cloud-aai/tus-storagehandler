@@ -26,11 +26,11 @@ Generally, **PRs are only reviewed when all boxes are ticked off and all
 automated checks pass** (use the comment section below if you believe that
 your PR is ready to be merged even though not all boxes were ticked off). -->
 
-- \[ \] My code follows the [contributing guidelines][contributing-guidelines] of this
-  project, including, in particular, with regard to any style guidelines
-- \[ \] The title of my PR complies with the [Conventional Commits
-  specification][conv-commits]; in particular, it clearly indicates
-  that a change is a breaking change
+- \[ \] My code follows the [contributing guidelines][contributing-guidelines]
+  of this project, including, in particular, with regard to any style guidelines
+- \[ \] The title of my PR complies with the
+  [Conventional Commits specification][conv-commits]; in particular, it clearly
+  indicates that a change is a breaking change
 - \[ \] I acknowledge that all my commits will be squashed into a single commit,
   using the PR title as the commit message
 - \[ \] I have performed a self-review of my own code
@@ -39,9 +39,9 @@ your PR is ready to be merged even though not all boxes were ticked off). -->
   changed behavior
 - \[ \] I have added type annotations for all function/class/method interfaces
   or updated existing ones (only for Python, TypeScript, etc.)
-- \[ \] I have provided appropriate documentation ([Google-style Python
-  docstrings][py-doc-google]) for all packages/modules/functions/classes/
-  methods or updated existing ones
+- \[ \] I have provided appropriate documentation
+  ([Google-style Python docstrings][py-doc-google]) for all
+  packages/modules/functions/classes/ methods or updated existing ones
 - \[ \] My changes generate no new warnings
 - \[ \] I have added tests that prove my fix is effective or that my feature
   works

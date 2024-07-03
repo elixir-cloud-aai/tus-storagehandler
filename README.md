@@ -1,143 +1,90 @@
-# Python Cookiecutter Template
+[![Bandit](https://img.shields.io/badge/security-bandit-yellow.svg)](https://bandit.readthedocs.io/en/latest/)
+[![codecov](https://codecov.io/gh/elixir-cloud-aai/tus-storagehandler/branch/main/graph/badge.svg)](https://codecov.io/gh/elixir-cloud-aai/tus-storagehandler)
+[![Documentation Status](https://readthedocs.org/projects/tus_storagehandler/badge/?version=latest)](https://tus_storagehandler.readthedocs.io/en/latest/?badge=latest)
+[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](./LICENSE)
+[![Python 3.11](https://img.shields.io/badge/python-3.11-blue.svg)](https://www.python.org/)
+[![GitHub contributors](https://img.shields.io/github/contributors/elixir-cloud-aai/tus-storagehandler)](https://github.com/elixir-cloud-aai/tus-storagehandler/graphs/contributors)
+[![Ruff](https://img.shields.io/badge/linter%20&%20formatter-ruff-000000.svg)](https://docs.astral.sh/ruff/)
+[![Safety](https://img.shields.io/badge/security-safety-orange.svg)](https://safetycli.com/product/safety-cli)
 
-This is a Cookiecutter template for creating a Python project with Poetry,
-including configurations for various project settings.
+# tus-storagehandler
+
+File handler utilizing TUS and MinIO with DRS-Filer integration.
 
 ## Table of Contents
 
-- [Introduction](#introduction)
+- [Basic Usage](#basic-usage)
 - [Installation](#installation)
-- [Usage](#usage)
-- [Configurations](#configurations)
-  - [Package manager - Poetry](#package-manager---poetry)
-  - [Linters and formatters - Ruff](#linters-and-formatters---ruff)
-  - [Spell checker - Typos](#spell-checker---typos)
-  - [Static type checker - Mypy](#static-type-checker---mypy)
-  - [Documentation - Sphinx](#documentation---sphinx)
-  - [Testing - pytest and pytest-cov](#testing---pytest-and-pytest-cov)
-- [CI/CD - GitHub Actions](#cicd---github-actions)
-- [Disclaimer](#disclaimer)
+- [Development](#development)
 - [Contributing](#contributing)
 - [Code of Conduct](#code-of-conduct)
 - [Versioning](#versioning)
 - [License](#license)
 - [Contact](#contact)
 
-## Usage
+## Basic Usage
 
-1. **Install cruft** (if you haven't already):
+## Installation
 
-```sh
-pip install cruft
-```
+## Development
 
-2. **Generate a New Project**:
+For ease, certain scripts have been abbreviated in `Makefile`, make sure that
+have installed the dependencies before running the commands.
 
-```sh
-cruft create https://github.com/elixir-cloud-aai/cookiecutter-python.git
-```
+> **Note**: `make` commands are only available for Unix-based systems.
 
-### Don't wanna use cruft?
-
-You can also use the `cookiecutter` command directly:
-
-1. **Install cookiecutter** (if you haven't already):
+To view the commdands available, run:
 
 ```sh
-pip install cookiecutter
+make
 ```
 
-2. **Generate a New Project**:
+Here are certain commands that you might find useful:
+
+- Making a virtual environment
 
 ```sh
-cookiecutter gh:elixir-cloud-aai/cookiecutter-python
+make v
 ```
 
-> **Note**: If you're using just `cookiecutter`, manually remove
-  `update-template` job from `update.yaml` github action workflow file as
-  `cookiecutter` doesn't support autosync like cruft.
+- Installing dependencies
 
-## Configurations
-
-### Package manager - Poetry
-
-This project uses [Poetry][poetry-org] as a package manager. Check out the
-commands at the [official documentation][poetry-docs].
-
-### Linters and formatters - Ruff
-
-To lint and format `Python` code files, it uses [Ruff][ruff], the default
-configuration is set in the `pyproject.toml` file.
-
-```toml
-select = [
-  "B", # flake8-bugbear
-  "E", # pycodestyle
-  "F", # Pyflakes
-  "I", # isort
-  "PL", # pylint
-  "SIM", # flake8-simplify
-  "UP", # pyupgrade
-]
+```sh
+make i
 ```
 
-To configure it to your needs, refer to the [rules documentation][rudff-linter]
-, and for formatter configuration, refer to the
-[configuration documentation][ruff-formatter].
+- Running tests
 
-### Spell checker - Typos
-
-If you want to ignore certain words, add them to the `pyproject.toml` file,
-under the `tool.typos.default.extend-words` key.
-
-```toml
-[tool.typos.default.extend-words]
-mke = 'mke'
+```sh
+make t
 ```
 
-For further configuration, refer to the [typos docs][typos-docs].
+- Running linter, formatter and spell checker
 
-### Static type checker - Mypy
+```sh
+make fl
+```
 
-Change the configuration in `pyproject.toml` file, for further information refer to
-the [documentation][mypy-config].
+- Building the documentation
 
-### Documentation - Sphinx
+```sh
+make d
+```
 
-Configuration for Sphinx is in the `docs/source/conf.py` file, for further info refer
-to the [Sphinx documentation][sphinx-docs]. The default configuration uses
-[furo theme][furo] and [ReadTheDocs][rtd] to host the documentation, you can
-change the configuration using `/docs/source/conf.py` and `.readthedocs.yml`
-file.
+- Running type checker
 
-> **Note**: Make sure to setup the `ReadTheDocs` account and add the project to
-  the account to host the documentation.
+```sh
+make tc
+```
 
-### Testing - pytest and pytest-cov
+- Running all pre-commit checks
 
-Generate a coverage report using `pytest-cov` and uploads it to codecov.io.
+```sh
+make pc
+```
 
-> **Note**: Make sure to setup the `Codecov` account and add the project to the
-  account to host the coverage report and add github [token](#cicd---github-actions).
-
-## CI/CD - GitHub Actions
-
-Here are the GitHub Actions Secrets that need to be included in the repository
-settings:
-
-- `PYPI_PASSWORD`: PyPI account password.
-- `CODECOV_TOKEN`: Codecov token.
-- `AUTO_UPDATE_GITHUB_TOKEN`: GitHub token with permissions to write to the repository.
-
-## Disclaimer
-
-Some of the links and images have been hardcoded with `ELIXIR Cloud & AAI`'s
-assets in the documentation, please update them manually if needed. These
-assets **MUST** be included for projects owned by ELIXIR Cloud & AAI, but
-**MUST NOT** be included for projects that are not (personal projects, projects
-owned by other orgs).
-
-**Only`markdown` files and `images/` directory need to be changed.**
+> **Note**: This is not the complete list of commands, run `make` to find if
+> more have been added.
 
 ## Contributing
 
@@ -162,7 +109,7 @@ leaders.
 ## Versioning
 
 The project adopts the [semantic versioning][semver] scheme for versioning.
-Currently the service is in a pre-release stage, so changes to the API,
+Currently the software is in a pre-release stage, so changes to the API,
 including breaking changes, may occur at any time without further notice.
 
 ## License
@@ -174,13 +121,12 @@ copy of which is also available in [`LICENSE`][license].
 
 The project is maintained by [ELIXIR Cloud & AAI][elixir-cloud-aai], a Driver
 Project of the [Global Alliance for Genomics and Health (GA4GH)][ga4gh], under
-the umbrella of the [ELIXIR][elixir] [Compute Platform][elixir-compute].
+the umbrella of the [ELIXIR] [Compute Platform][elixir-compute].
 
 To get in touch with us, please use one of the following routes:
 
 - For filing bug reports, feature requests or other code-related issues, please
-  make use of the project's
-  [issue tracker](https://github.com/elixir-cloud-aai/cookiecutter-python/issues).
+  make use of the project's [issue tracker][issue-tracker].
 - For private/personal issues, more involved communication, or if you would like
   to join our team as a regular contributor, you can either join our
   [chat board][badge-chat-url] or [email] the community leaders.
@@ -196,17 +142,8 @@ To get in touch with us, please use one of the following routes:
 [elixir-compute]: https://elixir-europe.org/platforms/compute
 [email]: mailto:cloud-service@elixir-europe.org
 [ga4gh]: https://ga4gh.org/
+[issue-tracker]: https://github.com/elixir-cloud-aai/tus-storagehandler/issues
 [license]: LICENSE
 [logo-elixir]: images/logo-elixir.svg
 [logo-elixir-cloud-aai]: images/logo-elixir-cloud-aai.svg
-[poetry-org]: https://python-poetry.org/
-[poetry-docs]: https://python-poetry.org/docs/cli/
-[ruff]: https://docs.astral.sh/ruff
-[ruff-linter]: https://docs.astral.sh/ruff/rules/
-[ruff-formatter]: https://docs.astral.sh/ruff/formatter
-[typos-docs]: https://pypi.org/project/typos/
-[mypy-config]: https://mypy.readthedocs.io/en/stable/config_file.html
-[sphinx-docs]: https://www.sphinx-doc.org/en/master/usage/configuration.html
-[furo]: https://pradyunsg.me/furo/quickstart/
-[rtd]: https://readthedocs.org/
-[semver]:https://semver.org/
+[semver]: https://semver.org/
