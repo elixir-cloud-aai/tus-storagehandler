@@ -1,20 +1,20 @@
 {
-  "template": "D:\\open-source\\gsoc\\final\\cookiecutter-python",
-  "commit": "88967f43af9799dfa0ad04b2908d7f40259c02d2",
+  "template": "https://github.com/elixir-cloud-aai/cookiecutter-python",
+  "commit": "43f9bd92eaf21557e87d3932524fe5ffb6fd7ef4",
   "checkout": null,
   "context": {
     "cookiecutter": {
-      "author_name": "Elixir Cloud AAI",
+      "author_name": "ELIXIR Cloud AAI",
       "author_email": "cloud-service@elixir-europe.org",
-      "development_status": "Beta",
-      "short_description": "File Handler Utilizing TUS and Minio (S3 Storage) with DRS Filer Integration",
+      "development_status": "Alpha",
+      "short_description": "File handler utilizing TUS and MinIO with DRS-Filer integration",
       "project_name": "tus-storagehandler",
       "project_slug": "tus_storagehandler",
       "github_username": "elixir-cloud-aai",
       "python_version": "3.11",
       "add_script": "y",
       "year": "2024",
-      "_template": "D:\\open-source\\gsoc\\final\\cookiecutter-python"
+      "_template": "https://github.com/elixir-cloud-aai/cookiecutter-python"
     }
   },
   "directory": null

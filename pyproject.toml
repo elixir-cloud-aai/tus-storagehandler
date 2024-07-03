@@ -7,23 +7,23 @@ warn_return_any = true
 warn_unused_configs = true
 
 [tool.poetry]
-authors = ["Elixir Cloud AAI <cloud-service@elixir-europe.org>"]
+authors = ["ELIXIR Cloud AAI <cloud-service@elixir-europe.org>"]
 classifiers = [
   "Development Status :: 4 - Beta",
   "License :: OSI Approved :: Apache Software License",
   "Programming Language :: Python :: 3",
   "Programming Language :: Python :: 3.11",
 ]
-description = "File Handler Utilizing TUS and Minio (S3 Storage) with DRS Filer Integration"
+description = "File handler utilizing TUS and MinIO with DRS-Filer integration"
 license = "Apache-2.0"
-maintainers = ["Elixir Cloud AAI <cloud-service@elixir-europe.org>"]
+maintainers = ["ELIXIR Cloud AAI <cloud-service@elixir-europe.org>"]
 name = "tus_storagehandler"
 readme = "README.md"
 repository = "https://github.com/elixir-cloud-aai/tus-storagehandler"
 version = "0.1.0"
 
 [tool.poetry.dependencies]
-python = "^3.11"
+python = "~=3.11"
 
 [tool.poetry.group.docs.dependencies]
 added-value = ">=0.24.0,<1.0.0"
