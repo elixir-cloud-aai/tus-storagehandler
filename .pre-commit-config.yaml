@@ -22,6 +22,9 @@ repos:
       - id: mdformat
         additional_dependencies:
           - mdformat-config
+          - mdformat-black
+          - mdformat-frontmatter
+        args: [--wrap=80]
   - repo: https://github.com/adrienverge/yamllint.git
     rev: v1.35.1
     hooks:
