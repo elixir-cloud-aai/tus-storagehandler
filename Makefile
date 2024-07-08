@@ -69,8 +69,8 @@ fl: format-lint
 
 .PHONY: install
 install:
-	@echo "\nInstalling dependencies and with this package +++++++++++++++++++++++++++++++++\n"
-	@poetry install
+	@echo "\nInstalling all dependencies and with this package +++++++++++++++++++++++++++++++++\n"
+	@poetry install --with=code_quality,docs,misc,test,types,vulnerability
 
 .PHONY: i
 i: install
