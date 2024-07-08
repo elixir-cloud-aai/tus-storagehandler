@@ -17,8 +17,8 @@ jobs:
         with:
           os: ${{ job.os }}
           python-version: '3.11'
-          poetry-install-options: "--with=misc --no-root"
-          poetry-export-options: "--with=misc"
+          poetry-install-options: "--only=misc --no-root"
+          poetry-export-options: "--only=misc"
 
       - name: Update project structure
         run: |
