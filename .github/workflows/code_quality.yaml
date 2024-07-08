@@ -76,8 +76,8 @@ jobs:
         with:
           os: ${{ job.os }}
           python-version: '3.11'
-          poetry-install-options: "--with=code_quality,types --no-root"
-          poetry-export-options: "--with=code_quality,types"
+          poetry-install-options: "--with=code_quality --with=types --no-root"
+          poetry-export-options: "--with=code_quality --with=types"
 
       - name: Check types
         run: poetry run mypy tus_storagehandler/

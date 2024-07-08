@@ -22,8 +22,8 @@ jobs:
         with:
           os: ${{ job.os }}
           python-version: '3.11'
-          poetry-install-options: "--with=docs,types --no-root"
-          poetry-export-options: "--with=docs,types"
+          poetry-install-options: "--with=docs --with=types --no-root"
+          poetry-export-options: "--with=docs --with=types"
 
       - name: Generate API docs
         run: |
