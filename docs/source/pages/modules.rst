@@ -1,5 +1,5 @@
 tus_storagehandler
-===================
+==================
 
 .. toctree::
    :maxdepth: 4

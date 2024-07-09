@@ -1,6 +1,6 @@
 {
   "template": "https://github.com/elixir-cloud-aai/cookiecutter-python",
-  "commit": "82a9aebbdff819758c94e7607c052a3fa5ba3b18",
+  "commit": "c9d14eea5af812f12c3e19e1bbdc8affe8759eda",
   "checkout": null,
   "context": {
     "cookiecutter": {

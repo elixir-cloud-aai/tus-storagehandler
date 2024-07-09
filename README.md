@@ -72,6 +72,9 @@ make i
 >
 > This ensures that the type checker functions correctly.
 
+> **Note**: Since the dependencies are segregated into groups, if you add a new
+> group make sure to add it in `make install` command in [Makefile](Makefile).
+
 - Running tests
 
 ```sh
@@ -90,6 +93,9 @@ make fl
 make d
 ```
 
+> **Note**: If you make changes to the code, make sure to generate and push the
+> documentation using above command, else the documentation check CI will fail.
+
 - Running type checker
 
 ```sh
@@ -100,6 +106,12 @@ make tc
 
 ```sh
 make pc
+```
+
+- Update the cookiecutter template
+
+```sh
+make u
 ```
 
 > **Note**: This is not the complete list of commands, run `make` to find out if
