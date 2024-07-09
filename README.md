@@ -29,7 +29,7 @@ File handler utilizing TUS and MinIO with DRS-Filer integration.
 ## Development
 
 For ease, certain scripts have been abbreviated in `Makefile`, make sure that
-have installed the dependencies before running the commands.
+you have installed the dependencies before running the commands.
 
 > **Note**: `make` commands are only available for Unix-based systems.
 
