@@ -14,12 +14,18 @@ File handler utilizing TUS and MinIO with DRS-Filer integration.
 
 ## Table of Contents
 
+- [Basic Usage](#basic-usage)
+- [Installation](#installation)
 - [Development](#development)
 - [Contributing](#contributing)
 - [Code of Conduct](#code-of-conduct)
 - [Versioning](#versioning)
 - [License](#license)
 - [Contact](#contact)
+
+## Basic Usage
+
+## Installation
 
 ## Development
 
@@ -104,6 +110,10 @@ make tc
 make pc
 ```
 
+- Update the cookiecutter template
+
+```sh
+make u
 ```
 
 > **Note**: This is not the complete list of commands, run `make` to find out if
