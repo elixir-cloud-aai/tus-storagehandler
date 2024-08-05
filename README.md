@@ -14,7 +14,7 @@ File handler utilizing TUS and MinIO with DRS-Filer integration.
 
 ## Table of Contents
 
-- [Synposis](#synopsis)
+- [Synopsis](#synopsis)
 - [Basic Usage](#basic-usage)
 - [Installation](#installation)
 - [Development](#development)
