@@ -45,7 +45,7 @@ minio server /data --console-address ":9001"
 
 1. **Download the required dependencies**
 
-   Navigate to the folder `TusStorageHandler`.
+   Navigate to the folder `tus_storagehandler`.
 
 2. **Install Poetry**
 
