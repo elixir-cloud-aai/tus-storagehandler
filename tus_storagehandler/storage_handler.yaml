@@ -1,0 +1,38 @@
+openapi: 3.0.2
+info:
+  version: 1.0.0
+  title: Tus Storage Handler
+  description: An API that allows file handling using TUS and Minio(S3 Storage)
+  termsOfService: 'https://www.ga4gh.org/terms-and-conditions/'
+  contact:
+    name: GA4GH Cloud Work Stream
+    email: ga4gh-cloud@ga4gh.org
+  license:
+    name: Apache 2.0
+    url: https://www.apache.org/licenses/LICENSE-2.0.html
+  license:
+    name: Apache 2.0
+    url: 'https://github.com/elixir-cloud-aai/tus-storagehandler/blob/basic-structure/LICENSE'
+servers:
+  - url: http://localhost/
+paths:
+  /:
+    get:
+      description: |
+        Returns a welcome message
+      operationId: home
+      responses:
+        '200':
+          description: basic response
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: "Welcome to Tus Storage Handler API"
+        '400':
+          description: The request is malformed.
+        '500':
+          description: An unexpected error occurred.
