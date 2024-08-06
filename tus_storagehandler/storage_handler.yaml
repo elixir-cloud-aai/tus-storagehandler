@@ -9,9 +9,6 @@ info:
     email: ga4gh-cloud@ga4gh.org
   license:
     name: Apache 2.0
-    url: https://www.apache.org/licenses/LICENSE-2.0.html
-  license:
-    name: Apache 2.0
     url: 'https://github.com/elixir-cloud-aai/tus-storagehandler/blob/main/LICENSE'
 servers:
   - url: http://localhost/
