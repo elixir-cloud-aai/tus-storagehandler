@@ -20,6 +20,13 @@ exceptions = {
         "code": 404,
     },
     InternalServerError: {
+        "message": "An internal server error occurred in the tus storage handler",
+        "code": 500,
+    },
+    GenericException: {
+        "message": "An unexpected error occurred",
+        "code": 500,
+    },
         "message": "We seem to be having a problem here in the tus storage handler.",
         "code": 500,
     },
