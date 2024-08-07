@@ -5,6 +5,7 @@ from werkzeug.exceptions import BadRequest, InternalServerError, NotFound
 
 class GenericException(Exception):
     """A generic exception for the Tus Storage Handler."""
+
     pass
 
 
