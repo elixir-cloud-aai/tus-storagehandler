@@ -1,13 +1,11 @@
 """Tus Storage Handler exceptions."""
 
-from werkzeug.exceptions import (
-    InternalServerError,
-    NotFound,
-    BadRequest
-)
+from werkzeug.exceptions import InternalServerError, NotFound, BadRequest
+
 
 class GenericException(Exception):
     pass
+
 
 exceptions = {
     Exception: {
