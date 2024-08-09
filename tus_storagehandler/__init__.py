@@ -1,1 +1,1 @@
-"""Cloud Storage Handler"""
+"""Cloud Storage Handler."""
