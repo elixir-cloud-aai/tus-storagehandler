@@ -1,10 +1,10 @@
 """Integration tests for operations in the service."""
 
-
 import pytest
 import requests
 
 SUCCESS_STATUS_CODE = 200
+
 
 @pytest.fixture
 def base_url():
