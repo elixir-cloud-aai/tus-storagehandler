@@ -5,8 +5,8 @@ import os
 from pathlib import Path
 
 from connexion import FlaskApp
-from foca import Foca
 from dotenv import load_dotenv
+from foca import Foca
 
 load_dotenv()
 logger = logging.getLogger(__name__)
@@ -26,7 +26,6 @@ def init_app() -> FlaskApp:
     Raises:
         FileNotFoundError: If the configuration file is not found.
     """
-
     # Determine the configuration path
     config_path_env1 = os.getenv("TUS_FOCA_CONFIG_PATH")
     print(config_path_env1)

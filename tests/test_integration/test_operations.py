@@ -1,16 +1,21 @@
-import requests
-import pytest
+"""Integration tests for operations in the service."""
 
+
+import pytest
+import requests
+
+SUCCESS_STATUS_CODE = 200
 
 @pytest.fixture
 def base_url():
-    # Define the base URL for your service
+    """Return the base URL for the service."""
     return "http://localhost:8080"
 
 
 def test_get_root(base_url):
+    """Test the root endpoint of the service."""
     response = requests.get(f"{base_url}/elixircoud/csh/v1")
 
     assert (
-        response.status_code == 200
+        response.status_code == SUCCESS_STATUS_CODE
     ), f"Expected status code 200, got {response.status_code}"

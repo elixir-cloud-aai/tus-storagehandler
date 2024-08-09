@@ -2,11 +2,9 @@
 
 import logging
 
-from exceptions import NotFound
+from flask import jsonify
 
 logger = logging.getLogger(__name__)
-
-from flask import jsonify, request
 
 
 def home():
