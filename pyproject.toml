@@ -23,7 +23,14 @@ repository = "https://github.com/elixir-cloud-aai/tus-storagehandler"
 version = "0.1.0"
 
 [tool.poetry.dependencies]
-python = ">=3.11"
+python = ">=3.11,<4.0"
+foca = "^0.13.0"
+connexion = "2.14.2"
+multipart = "^0.2.5"
+python-multipart = "^0.0.9"
+python-dotenv = "^1.0.1"
+pytest = "^8.3.2"
+requests = "^2.32.3"
 
 [tool.poetry.group.code_quality]
 optional = true
