@@ -26,7 +26,7 @@ api:
         - path: storage_handler.yaml
           append: null
           add_operation_fields:
-              x-openapi-router-controller: controllers
+              x-openapi-router-controller: tus_storagehandler.api.elixircloud.csh.controllers 
           connexion:
               strict_validation: True
               validate_responses: False

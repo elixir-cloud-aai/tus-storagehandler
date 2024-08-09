@@ -1,17 +1,16 @@
 openapi: 3.0.2
 info:
   version: 1.0.0
-  title: Tus Storage Handler
-  description: An API that allows file handling using TUS and Minio(S3 Storage)
-  termsOfService: 'https://www.ga4gh.org/terms-and-conditions/'
+  title: Cloud Storage Handler
+  description: API for handling files on a cloud storage service
   contact:
-    name: GA4GH Cloud Work Stream
-    email: ga4gh-cloud@ga4gh.org
+    name: ELIXIR Cloud & AAI
+    email: cloud-service@elixir-europe.org
   license:
     name: Apache 2.0
     url: 'https://github.com/elixir-cloud-aai/tus-storagehandler/blob/main/LICENSE'
 servers:
-  - url: http://localhost/
+  - url: /elixircoud/csh/v1
 paths:
   /:
     get:
