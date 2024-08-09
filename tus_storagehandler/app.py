@@ -4,8 +4,8 @@ import logging
 import os
 from pathlib import Path
 
-from connexion import FlaskApp
-from dotenv import load_dotenv
+from connexion import FlaskApp  # type: ignore
+from dotenv import load_dotenv  # type: ignore
 from foca import Foca
 
 load_dotenv()
